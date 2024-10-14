@@ -1,0 +1,13 @@
+py -m venv venv
+pip install uvicorn
+pip install fastapi
+uvicorn api.main:app --reload
+pip install pytest
+pip install requests
+pip install httpx
+pip freeze > requirements.txt
+pip install mangum
+
+
+(venv) E:\Git-LocalRepos\fastapi_aws_cicd>pytest
+
