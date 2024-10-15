@@ -11,3 +11,25 @@ pip install mangum
 
 (venv) E:\Git-LocalRepos\fastapi_aws_cicd>pytest
 
+=========
+
+Default AWS Codepipeline buildspec.yml file
+====
+
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Install python dependencies"
+      - python -m pip install --upgrade pip
+      - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      # - echo "Run tests"
+      # - python -m pip install flake8 pytest
+      # - pytest
+
+
+==========
+
+
+
