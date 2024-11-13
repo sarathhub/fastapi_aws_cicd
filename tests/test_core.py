@@ -6,4 +6,4 @@ client = TestClient(app)
 def test_root():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello World from AWS Lambda"}
+    assert response.json() == {"message": "Hello World from AWS Lambda 13/11/2024"}
