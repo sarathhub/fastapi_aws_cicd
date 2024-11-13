@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World from AWS Lambda"}
+    return {"message": "Hello World from AWS Lambda 13/11/2024"}
 
 
 @app.get("/test")
