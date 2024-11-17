@@ -11,6 +11,8 @@ import pyodbc
 
 app = FastAPI()
 
+handler = Mangum(app=app)
+
 api.models.Base.metadata.create_all(bind=engine)
 
 
@@ -33,4 +35,4 @@ async def get_countries(db: db_dependency):
     return db.query(Country).all()
 
 
-handler = Mangum(app=app)
+

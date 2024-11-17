@@ -31,5 +31,13 @@ phases:
 
 ==========
 
+following command used to create zip to upload to lambda function
+
+pip install --platform manylinux2014_x86_64 --python-version 3.11 --only-binary=:all: -t dependencies -r requirements.txt
+
+if platform not used getting error import module pydatic core error.
+
+platform not required when using aws codebuild
+
 
 
